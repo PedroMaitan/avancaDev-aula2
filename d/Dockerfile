@@ -9,8 +9,8 @@ RUN go mod download
 
 COPY . .
 
-RUN GOOS=linux go build a.go
+RUN GOOS=linux go build d.go
 
-EXPOSE 9090
+EXPOSE 9093
 
-ENTRYPOINT [ "./a" ]
+ENTRYPOINT [ "./d" ]

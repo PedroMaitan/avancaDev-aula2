@@ -12,3 +12,21 @@ services:
     ports:
       - "15672:15672"
       - "5672:5672"
+
+  microserva:
+    image: pogmaitan/microsservicos-avancadev-a
+    ports: 
+      - 9090:9090
+
+  microservb:
+    image: pogmaitan/microsservicos-avancadev-b
+
+  microservc:
+    image: pogmaitan/microsservicos-avancadev-c
+    ports: 
+      - 9092:9092
+
+  microservd:
+    image: pogmaitan/microsservicos-avancadev-d
+    ports: 
+      - 9093:9093
